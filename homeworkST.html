@@ -1,0 +1,202 @@
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استاد: ثبت نام</title>
+
+    <style>
+
+*,*::before, *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @font-face {
+  font-family: myFont;
+  src: url(fonts/Vazir-Bold.woff) format('woff');
+}
+body{
+    background-color: rgb(153, 167, 153);
+    font-family: myFont;
+        }
+.header0{
+    background-color: rgb(153, 167, 153);
+    width: 100%;
+    height: 15px;
+    padding-right: 1200px;
+    padding-top: 4px;
+    }
+.header{
+    background-color: rgb(211, 228, 205);
+    width: 100%;
+    height: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    line-height: 30px;
+    color: rgb(68, 65, 65);
+    position: relative;
+    top: 15px;
+}
+#ltr{
+    padding-right: 1040px;
+    color: darkred;)
+}
+
+.main{
+    background-color: #FEF5ED;
+    width: 60%;
+    height: 620px;
+    padding-right: 100px;
+    padding-top: 20px;
+    line-height: 30px;
+    color: rgb(68, 65, 65);
+    position: absolute;
+    top: 150px;
+    left: 20%;
+}
+.titr{
+    position: absolute;
+    right: 120px;
+}
+.in{
+    position: absolute;
+    right: 400px;
+    background-color: rgba(255, 255, 255, 0.836);
+    width: 350px;
+    height: 40px;
+    border: none;
+}
+#ah{
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#r1{
+    top: 20px;
+}
+#r2{
+    top: 70px;
+}
+#r3{
+    top: 120px;
+}
+#r4{
+    top: 170px;
+}
+#rgm4{
+    position: absolute;
+    top: 170px;
+    right: 550px;
+}
+#rgf4{
+    position: absolute;
+    top: 170px;
+    right: 600px;
+}
+#ingm{
+    position: absolute;
+    top: 178px;
+    right: 575px;
+}
+#ingf{
+    position: absolute;
+    top: 178px;
+    right: 620px;
+}
+
+#r5{
+    top: 220px;
+}
+#r6{
+    top: 270px;
+    padding-top: 10px;
+}
+#r7{
+    top: 320px;
+    padding-top: 10px;
+}
+#r8{
+    top: 370px;
+    font-family: myFont;
+}
+#r9{
+    top: 420px;
+}
+#r10{
+    top: 470px;
+}
+#fontlist{
+    font-family: myFont;
+}
+
+.send{
+    font-family: myFont;
+    position: absolute;
+    top: 550px;
+    right: 330px;
+    background-color:  rgb(153, 167, 153);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+
+
+}
+
+    </style>
+</head>
+<body>
+    
+    <div dir="rtl" class="header0"><a href="#" id="ah">بازگشت به صفحه اصلی</a></div>
+    <div dir="rtl" class="header">
+    <p>برای ثبت نام در دوره‌های آموزشی ما، فرم زیر را تکمیل کنید. کارشناسان مجموعه، پس از بررسی اطلاعات و مدارک شما، جهت هماهنگی زمان مصاحبه حضوری، با شما تماس خواهند گرفت.</p>
+    <p>از اینکه مجموعه ما را انتخاب کرده‌اید، از شما سپاسگزاریم.</p>
+    <p id="ltr">مجموعه آموزشی استاد</p>
+</div>
+    <div dir="rtl" class="main">
+        <label class="titr" id="r1">نام و نام خانوادگی</label>
+        <input class="in" id="r1" type="text">
+        <label class="titr" id="r2">کد ملی</label>
+        <input class="in" id="r2" type="number">
+        <label class="titr" id="r3">کد آموزشی</label>
+        <input class="in" id="r3" type="number">
+        <label class="titr" id="r4">جنسیت</label>
+        <label class="titr" id="rgm4">مرد</label>
+        <label class="titr" id="rgf4">زن</label>
+        <input type="radio" id="ingm" name="gender" value="male" checked> 
+        <input type="radio" id="ingf" name="gender" value="female"> 
+        <label class="titr" id="r5">تاریخ تولد</label>
+        <input class="in" id="r5" type="date">
+        <label class="titr" id="r6">تصویر کارت ملی</label>
+        <input class="in" id="r6" type="file">
+        <label class="titr" id="r7">تصویر صفحه اول شناسنامه</label>
+        <input class="in" id="r7" type="file">
+        <label class="titr" id="r8">دوره مورد نظر</label>
+        <select class="in" id="r8" name=”list” >   
+        <option id="fontlist">انتخاب دوره</option>
+        <option id="fontlist">کاربری کامپیوتر</option>
+        <option id="fontlist"> گرافیک کامپیوتری</option> 
+        <option id="fontlist">طراحی سایت مقدماتی </option>
+        <option id="fontlist">طراحی سایت پیشرفته </option>
+        <option id="fontlist"> پایگاه داده مقدماتی</option>
+        <option id="fontlist">پایگاه داده پیشرفته </option> 
+        <option id="fontlist"> طراحی الگوریتم</option>
+        <option id="fontlist">برنامه نویسی مقدماتی </option> 
+        <option id="fontlist">برنامه نویسی پیشرفته </option> 
+            
+            </select>
+        
+        <label class="titr" id="r9">آدرس ایمیل</label>
+        <input class="in" id="r9" type="email">
+        <label class="titr" id="r10">شماره تماس</label>
+        <input class="in" id="r10" type="number">
+        <button class="send">ارسال فرم</button>
+    </div>
+
+  
+    
+</body>
+</html>
